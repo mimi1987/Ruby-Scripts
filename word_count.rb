@@ -4,7 +4,7 @@ text = gets.chomp
 words = text.split(" ")
 
 # Create the hash for where the words and freqencies are saved.
-frequencies = Hash.new(0) # Give the values a default value.
+frequencies = Hash.new(0) # Give the values a default value of 0.
 
 words.each do |word|
   frequencies[word] += 1
