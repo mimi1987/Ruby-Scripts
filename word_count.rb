@@ -6,6 +6,7 @@ words = text.split(" ")
 # Create the hash for where the words and freqencies are saved.
 frequencies = Hash.new(0) # Give the values a default value of 0.
 
+# Add the words from the user input to the hash.
 words.each do |word|
   frequencies[word] += 1
 end
@@ -15,7 +16,7 @@ frequencies = frequencies.sort_by do |word, freq|
   freq
 end
 
-frequencies.reverse!
+frequencies.reverse! # Does the magic for the descending order.
 
 # Print out the words and frequencies.
 frequencies.each do |word, freq|
